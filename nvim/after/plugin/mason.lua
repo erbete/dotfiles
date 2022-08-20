@@ -14,8 +14,12 @@ lspconfig.setup {
       "sqlls",
       "bashls",
       "dockerls",
-      "jsonls",
       "yamlls",
       "intelephense",
+      "jsonls",
+      "tailwindcss",
+      "volar",
+      "cssls",
+      "html"
     }
 }

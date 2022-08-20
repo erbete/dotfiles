@@ -16,5 +16,6 @@ lspconfig.setup {
       "dockerls",
       "jsonls",
       "yamlls",
+      "intelephense",
     }
 }

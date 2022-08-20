@@ -31,6 +31,7 @@ ts.setup {
 		"lua",
 		"vim",
         "zig",
+		"php",
  	},
     -- autotag = {
     --     enable = true,

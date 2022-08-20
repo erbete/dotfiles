@@ -95,4 +95,8 @@ nvim_lsp.yamlls.setup{
   }
 }
 
+nvim_lsp.intelephense.setup{
+  on_attach = on_attach,
+}
+
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 2000)]]

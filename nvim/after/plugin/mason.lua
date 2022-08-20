@@ -20,6 +20,7 @@ lspconfig.setup {
       "tailwindcss",
       "volar",
       "cssls",
-      "html"
+      "html",
+      "sumneko_lua",
     }
 }

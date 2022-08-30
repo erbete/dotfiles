@@ -24,15 +24,15 @@ keymap.set("n", "<leader>ca", "<CMD>lua vim.lsp.buf.code_action()<CR>", opts)
 local cmp = require "cmp"
 cmp.setup {
   mapping = {
-        ["<C-p>"] = cmp.mapping.select_prev_item(),
-        ["<C-n>"] = cmp.mapping.select_next_item(),
-    	["<C-d>"] = cmp.mapping.scroll_docs(-4),
-    	["<C-u>"] = cmp.mapping.scroll_docs(4),
-        ["<C-e>"] = cmp.mapping.close(),
-        ["<CR>"] = cmp.mapping.confirm {
-            behavior = cmp.ConfirmBehavior.Replace,
-            select = true, -- hit enter to select first suggestion
-      },
+    ["<C-p>"] = cmp.mapping.select_prev_item(),
+    ["<C-n>"] = cmp.mapping.select_next_item(),
+    ["<C-d>"] = cmp.mapping.scroll_docs(-4),
+    ["<C-u>"] = cmp.mapping.scroll_docs(4),
+    ["<C-e>"] = cmp.mapping.close(),
+    ["<CR>"] = cmp.mapping.confirm {
+      behavior = cmp.ConfirmBehavior.Replace,
+      select = true, -- hit enter to select first suggestion
+    },
   },
 }
 
@@ -50,6 +50,7 @@ keymap.set("n", "<leader>wd", "<CMD>Telescope diagnostics theme=ivy<CR>", opts)
 keymap.set("n", "<leader>i", "<CMD>Telescope lsp_implementations theme=ivy<CR>", opts)
 keymap.set("n", "<leader>df", "<CMD>Telescope lsp_definitions theme=ivy<CR>", opts)
 keymap.set("n", "<leader>b", "<CMD>Telescope file_browser theme=ivy<CR>", opts)
+keymap.set("n", "<leader>fd", "<CMD>Telescope lsp_document_symbols theme=ivy<CR>", opts)
 
 -- cycle between buffers
 keymap.set("n", "<S-Tab>", ":bn<CR>", opts)

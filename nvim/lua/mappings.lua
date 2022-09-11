@@ -51,6 +51,7 @@ keymap.set("n", "<leader>i", "<CMD>Telescope lsp_implementations theme=ivy<CR>",
 keymap.set("n", "<leader>df", "<CMD>Telescope lsp_definitions theme=ivy<CR>", opts)
 keymap.set("n", "<leader>b", "<CMD>Telescope file_browser theme=ivy<CR>", opts)
 keymap.set("n", "<leader>fd", "<CMD>Telescope lsp_document_symbols theme=ivy<CR>", opts)
+keymap.set("n", "<leader>p", "<CMD>Telescope projects theme=ivy<CR>", opts)
 
 -- cycle between buffers
 keymap.set("n", "<S-Tab>", ":bn<CR>", opts)

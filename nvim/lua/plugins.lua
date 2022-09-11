@@ -16,7 +16,6 @@ packer.startup(function(use)
     use 'norcalli/nvim-colorizer.lua' -- add color to hex values
     use 'lukas-reineke/indent-blankline.nvim' -- vertical indent lines
     use 'goolord/alpha-nvim' -- greeter/start up screen
-    --  use 'RRethy/vim-illuminate' -- highlight same words on hover
     use 'onsails/lspkind-nvim' -- pictograms to builtin lsp
     use { 'akinsho/bufferline.nvim', tag = 'v2.*' } -- tabline
     use 'beauwilliams/focus.nvim' -- window splitter
@@ -50,5 +49,5 @@ packer.startup(function(use)
     use 'nvim-lualine/lualine.nvim'
     use 'folke/zen-mode.nvim' -- zen mode
     use 'lewis6991/gitsigns.nvim' -- git stuff
-    use 'Abstract-IDE/penvim' -- project rooter
+    use 'ahmedkhalf/project.nvim'
 end)

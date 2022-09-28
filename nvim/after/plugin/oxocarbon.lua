@@ -1,4 +1,0 @@
--- local status, oxo = pcall(require, "oxocarbon-lua")
--- if (not status) then return end
---
--- vim.cmd.colorscheme 'oxocarbon-lua'

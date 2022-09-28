@@ -12,6 +12,7 @@ packer.startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- superior code highlighting
     use 'frenzyexists/aquarium-vim' -- theme
     use { 'catppuccin/nvim', as = 'catppuccin' } -- theme
+    use { 'B4mbus/oxocarbon-lua.nvim' } -- theme
     use 'kyazdani42/nvim-web-devicons' -- icons
     use 'norcalli/nvim-colorizer.lua' -- add color to hex values
     use 'lukas-reineke/indent-blankline.nvim' -- vertical indent lines
@@ -27,17 +28,17 @@ packer.startup(function(use)
     use 'williamboman/mason-lspconfig.nvim' -- lsp installation helper
 
     -- code completion engine
-    use 'hrsh7th/cmp-nvim-lsp' 
-    use 'hrsh7th/cmp-buffer' 
-    use 'hrsh7th/cmp-path' 
-    use 'hrsh7th/cmp-cmdline' 
-    use 'hrsh7th/nvim-cmp' 
-    use 'hrsh7th/cmp-vsnip' 
-    use 'hrsh7th/vim-vsnip' 
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-vsnip'
+    use 'hrsh7th/vim-vsnip'
 
     -- file finder, file explorer, file stuff
     use 'nvim-lua/plenary.nvim'
-    use 'nvim-telescope/telescope.nvim' 
+    use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-fzy-native.nvim'
     use 'nvim-telescope/telescope-file-browser.nvim'
     use 'nvim-telescope/telescope-ui-select.nvim'

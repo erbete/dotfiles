@@ -13,6 +13,7 @@ packer.startup(function(use)
     use 'frenzyexists/aquarium-vim' -- theme
     use { 'catppuccin/nvim', as = 'catppuccin' } -- theme
     use { 'B4mbus/oxocarbon-lua.nvim' } -- theme
+    use { 'projekt0n/github-nvim-theme' }
     use 'kyazdani42/nvim-web-devicons' -- icons
     use 'norcalli/nvim-colorizer.lua' -- add color to hex values
     use 'lukas-reineke/indent-blankline.nvim' -- vertical indent lines

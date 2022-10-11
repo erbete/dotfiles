@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/roar/.local/share/nvim/site/pack/packer/start/focus.nvim",
     url = "https://github.com/beauwilliams/focus.nvim"
   },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/home/roar/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/roar/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -193,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/roar/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["oxocarbon-lua.nvim"] = {
+    loaded = true,
+    path = "/home/roar/.local/share/nvim/site/pack/packer/start/oxocarbon-lua.nvim",
+    url = "https://github.com/B4mbus/oxocarbon-lua.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

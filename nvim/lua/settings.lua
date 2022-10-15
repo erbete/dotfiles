@@ -34,4 +34,4 @@ vim.opt.shiftwidth = 4
 
 vim.opt.lazyredraw = true
 
-vim.cmd [[colorscheme aquarium]]
+vim.cmd [[colorscheme oxocarbon-lua]]

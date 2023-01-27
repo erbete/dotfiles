@@ -7,6 +7,9 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1 # disable telemetry
 # zig
 export PATH="$PATH:$HOME/zig"
 
+# fd
+export PATH="$PATH:$HOME/.local/bin"
+
 # go
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"

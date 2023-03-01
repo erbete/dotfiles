@@ -21,6 +21,6 @@ lspconfig.setup {
       "volar",
       "cssls",
       "html",
-      "sumneko_lua",
+      "lua-language-server",
     }
 }

@@ -7,99 +7,99 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local on_attach = function(client, bufnr)
-  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+    vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 end
 
 -- language servers
 nvim_lsp.gopls.setup {
-  on_attach = on_attach,
+    on_attach = on_attach,
 }
 
 nvim_lsp.zls.setup {
-  on_attach = on_attach,
+    on_attach = on_attach,
 }
 
 nvim_lsp.sqlls.setup {
-  on_attach = on_attach,
+    on_attach = on_attach,
 }
 
 nvim_lsp.bashls.setup {
-  on_attach = on_attach,
+    on_attach = on_attach,
 }
 
 nvim_lsp.dockerls.setup {
-  on_attach = on_attach,
+    on_attach = on_attach,
 }
 
 nvim_lsp.yamlls.setup {
-  on_attach = on_attach,
-  settings = {
-    redhat = {
-      telemetry = {
-        enabled = false
-      }
+    on_attach = on_attach,
+    settings = {
+        redhat = {
+            telemetry = {
+                enabled = false
+            }
+        }
     }
-  }
 }
 
 nvim_lsp.intelephense.setup {
-  on_attach = on_attach,
+    on_attach = on_attach,
 }
 
 nvim_lsp.volar.setup {
-  filetypes = { "typescript", "javascript", "vue" }
+    filetypes = { "typescript", "javascript", "vue" }
 }
 
 nvim_lsp.jsonls.setup {
-  on_attach = on_attach,
+    on_attach = on_attach,
 }
 
 nvim_lsp.tailwindcss.setup {
-  on_attach = on_attach,
-  filetypes = {
-    "html",
-    "css",
-    "less",
-    "postcss",
-    "scss",
-    "stylus",
-    "markdown",
-    "blade"
-  },
+    on_attach = on_attach,
+    filetypes = {
+        "html",
+        "css",
+        "less",
+        "postcss",
+        "scss",
+        "stylus",
+        "markdown",
+        "blade"
+    },
 }
 
 nvim_lsp.cssls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = {
-    "css",
-    "scss",
-    "less",
-  }
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {
+        "css",
+        "scss",
+        "less",
+    }
 }
 
 nvim_lsp.html.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
+    on_attach = on_attach,
+    capabilities = capabilities,
 }
 
-nvim_lsp.sumneko_lua.setup {
-  settings = {
-    Lua = {
-      runtime = {
-        version = "LuaJIT",
-      },
-      diagnostics = {
-        globals = { "vim" },
-      },
-      workspace = {
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
-      telemetry = {
-        enable = false,
-      },
+nvim_lsp.lua_ls.setup {
+    settings = {
+        Lua = {
+            runtime = {
+                version = "LuaJIT",
+            },
+            diagnostics = {
+                globals = { "vim" },
+            },
+            workspace = {
+                library = vim.api.nvim_get_runtime_file("", true),
+            },
+            telemetry = {
+                enable = false,
+            },
+        },
     },
-  },
 }
 
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 2000)]]

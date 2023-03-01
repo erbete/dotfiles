@@ -35,3 +35,6 @@ vim.opt.shiftwidth = 4
 vim.opt.lazyredraw = true
 
 vim.cmd [[colorscheme oh-lucy-evening]]
+
+-- PHP files have this disabled by default for whatever reason...
+vim.cmd [[autocmd FileType php setlocal autoindent]]

@@ -102,4 +102,4 @@ nvim_lsp.lua_ls.setup {
     },
 }
 
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 2000)]]
+vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]

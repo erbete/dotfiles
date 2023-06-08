@@ -1,8 +1,9 @@
-local wezterm = require 'wezterm';
+local wezterm = require "wezterm";
+local act = wezterm.action;
 -- local launch_menu = {}
 
 return {
-    color_scheme = "Fahrenheit",
+    color_scheme = "Hacktober",
     -- font = wezterm.font("CaskaydiaCove NF", {weight="Regular"}),
     -- font = wezterm.font("Operator Mono Medium", {weight="Medium"}),
     font = wezterm.font("JetBrains Mono", { weight = "Medium", stretch = "Expanded" }),
@@ -19,6 +20,7 @@ return {
     default_cursor_style = "SteadyBlock",
     -- cursor_blink_rate = 800,
     keys = {
-        { key = "v", mods = "SHIFT|CTRL", action = "Paste" },
+        { key = "V", mods = "CTRL", action = act.PasteFrom "Clipboard"},
+        { key = "V", mods = "CTRL", action = act.PasteFrom "PrimarySelection"},
     }
 }

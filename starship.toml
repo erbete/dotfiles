@@ -14,7 +14,7 @@ symbol = " "
 symbol = " "
 
 [directory]
-read_only = " "
+read_only = " 📂"
 
 [docker_context]
 symbol = " "
@@ -47,13 +47,10 @@ symbol = " "
 symbol = " "
 
 [memory_usage]
-symbol = " "
+symbol = "💾 "
 
 [meson]
 symbol = "喝 "
-
-[nim]
-symbol = " "
 
 [nix_shell]
 symbol = " "
@@ -62,13 +59,10 @@ symbol = " "
 symbol = " "
 
 [package]
-symbol = " "
+symbol = "📦 "
 
 [python]
 symbol = " "
-
-[rlang]
-symbol = "ﳒ "
 
 [ruby]
 symbol = " "

@@ -18,9 +18,8 @@ packer.startup(function(use)
     use 'lukas-reineke/indent-blankline.nvim' -- vertical indent lines
     use 'goolord/alpha-nvim' -- greeter/start up screen
     use 'onsails/lspkind-nvim' -- pictograms to builtin lsp
-    use { 'akinsho/bufferline.nvim', tag = 'v2.*' } -- tabline
+    use { 'akinsho/bufferline.nvim', tag = '*', requires = 'nvim-tree/nvim-web-devicons' } -- tabline
     use 'beauwilliams/focus.nvim' -- window splitter
-    use 'https://git.sr.ht/~whynothugo/lsp_lines.nvim' -- fancy lsp diagnostics lines
 
     -- lsp
     use 'neovim/nvim-lspconfig'

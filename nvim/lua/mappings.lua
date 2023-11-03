@@ -37,7 +37,12 @@ cmp.setup {
 }
 
 -- telescope
-keymap.set("n", "<leader>f", "<CMD>Telescope find_files theme=ivy<CR>", opts)
+keymap.set("n", "<leader>f", function()
+    require("telescope.builtin").find_files({ theme = "ivy", prompt_title = vim.fn.getcwd() })
+end, opts)
+keymap.set("n", "<leader>fw", function()
+    require("telescope.builtin").find_files({ cwd = vim.fn.expand("%:p:h") , theme = "ivy", prompt_title = vim.fn.expand("%") })
+end, opts)
 keymap.set("n", "<leader>ff", "<CMD>Telescope find_files cwd=$HOME theme=ivy<CR>", opts)
 keymap.set("n", "<leader>fg", "<CMD>Telescope git_files theme=ivy<CR>", opts)
 keymap.set("n", "<leader>fr", "<CMD>Telescope live_grep theme=ivy<CR>", opts)

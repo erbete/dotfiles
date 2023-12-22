@@ -102,12 +102,4 @@ nvim_lsp.lua_ls.setup {
     },
 }
 
-nvim_lsp.omnisharp.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    cmd = { "/home/roar/.local/share/nvim/mason/packages/omnisharp/omnisharp", "--languageserver",
-        "--hostPID",
-        tostring(vim.fn.getpid()) },
-}
-
 vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]

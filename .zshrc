@@ -11,8 +11,7 @@ export PATH="$PATH:/usr/local/zig"
 export PATH="$PATH:$HOME/.local/bin"
 
 # go
-export GOPATH="/usr/local/go"
-export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:/usr/local/go/bin"
 
 # pfetch
 export PF_INFO="ascii title os kernel uptime memory" 

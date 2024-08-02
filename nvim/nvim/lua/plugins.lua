@@ -10,9 +10,8 @@ packer.startup(function(use)
     use 'wbthomason/packer.nvim'
 
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- superior code highlighting
-    use { 'B4mbus/oxocarbon-lua.nvim' }                          -- theme
     use { 'projekt0n/github-nvim-theme' }                        -- theme
-    use 'Yazeed1s/oh-lucy.nvim'                                  -- theme
+    use { 'slugbyte/lackluster.nvim' }                           -- theme
     use 'kyazdani42/nvim-web-devicons'                           -- icons
     use 'norcalli/nvim-colorizer.lua'                            -- add color to hex values
     use 'lukas-reineke/indent-blankline.nvim'                    -- vertical indent lines

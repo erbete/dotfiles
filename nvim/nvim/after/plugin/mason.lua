@@ -8,19 +8,18 @@ mason.setup({
 })
 
 lspconfig.setup {
-  ensure_installed = {
-      "gopls",
-      "zls",
-      "sqlls",
-      "bashls",
-      "dockerls",
-      "yamlls",
-      "intelephense",
-      "jsonls",
-      "tailwindcss",
-      "volar",
-      "cssls",
-      "html",
-      "lua_ls",
+    ensure_installed = {
+        "gopls",
+        "zls",
+        "sqlls",
+        "bashls",
+        "dockerls",
+        "yamlls",
+        "jsonls",
+        "tailwindcss",
+        "volar",
+        "cssls",
+        "html",
+        "lua_ls",
     }
 }

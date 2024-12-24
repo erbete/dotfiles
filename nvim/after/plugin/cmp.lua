@@ -1,50 +1,22 @@
 local status, cmp = pcall(require, "cmp")
 if (not status) then return end
 
-local kind_icons = {
-  Text = "",
-  Method = "",
-  Function = "",
-  Constructor = "",
-  Field = "",
-  Variable = "",
-  Class = "ﴯ",
-  Interface = "",
-  Module = "",
-  Property = "ﰠ",
-  Unit = "",
-  Value = "",
-  Enum = "",
-  Keyword = "",
-  Snippet = "",
-  Color = "",
-  File = "",
-  Reference = "",
-  Folder = "",
-  EnumMember = "",
-  Constant = "",
-  Struct = "",
-  Event = "",
-  Operator = "",
-  TypeParameter = ""
-}
-
 cmp.setup({
-  completion = {
-  	  	completeopt = "menu,menuone,noinsert"
-  	  },
-  snippet = {
-    expand = function(args)
-		vim.fn["vsnip#anonymous"](args.body)
-    end,
-  },
-  sources = cmp.config.sources({
-    { name = "nvim_lsp" },
-    { name = "vsnip" },
-  	}, {
-		{ name = "buffer" },
-	}),
-	formatting = {
+    completion = {
+        completeopt = "menu,menuone,noinsert"
+    },
+    snippet = {
+        expand = function(args)
+            vim.fn["vsnip#anonymous"](args.body)
+        end,
+    },
+    sources = cmp.config.sources({
+        { name = "nvim_lsp" },
+        { name = "vsnip" },
+    }, {
+        { name = "buffer" },
+    }),
+    formatting = {
         format = require("lspkind").cmp_format({
             mode = "symbol_text",
             menu = ({
@@ -55,7 +27,7 @@ cmp.setup({
                 latex_symbols = "[Latex]",
             })
         }),
-	}
+    }
 })
 
 --cmp.setup.cmdline('/', {
@@ -69,7 +41,7 @@ cmp.setup({
 --    mapping = cmp.mapping.preset.cmdline(),
 --    sources = cmp.config.sources({
 --        { name = 'path' }
---        }, { 
+--        }, {
 --            { name = 'cmdline' }
 --        })
 --})

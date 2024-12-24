@@ -7,7 +7,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local on_attach = function(client, bufnr)
-    vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+    vim.bo[bufnr].omnifunc = "v:lua.vim.lsp.omnifunc"
 end
 
 -- language servers
@@ -42,10 +42,6 @@ nvim_lsp.yamlls.setup {
     }
 }
 
-nvim_lsp.intelephense.setup {
-    on_attach = on_attach,
-}
-
 nvim_lsp.volar.setup {
     filetypes = { "typescript", "javascript", "vue" }
 }
@@ -64,7 +60,6 @@ nvim_lsp.tailwindcss.setup {
         "scss",
         "stylus",
         "markdown",
-        "blade"
     },
 }
 

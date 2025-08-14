@@ -12,6 +12,7 @@ packer.startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- superior code highlighting
     use { 'projekt0n/github-nvim-theme' }                        -- theme
     use { 'slugbyte/lackluster.nvim' }                           -- theme
+    use { 'rebelot/kanagawa.nvim' }                              -- theme
     use 'kyazdani42/nvim-web-devicons'                           -- icons
     use 'lukas-reineke/indent-blankline.nvim'                    -- vertical indent lines
     use 'goolord/alpha-nvim'                                     -- greeter/start up screen
